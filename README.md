@@ -9,4 +9,9 @@ Darwin Pankajs-MacBook-Pro.local 24.5.0 Darwin Kernel Version 24.5.0: Tue Apr 22
 
 # environment setup
 
+```bash
+conda env create -f environment.yml   # creates its own copy of ml101
+conda activate ml101
+```
+
 
