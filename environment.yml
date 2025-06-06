@@ -1,0 +1,10 @@
+name: ml101
+channels:
+  - defaults
+dependencies:
+  - jupyterlab
+  - numpy
+  - pytest
+  - pandas
+  - python=3.11
+prefix: /opt/homebrew/Caskroom/miniconda/base/envs/ml101

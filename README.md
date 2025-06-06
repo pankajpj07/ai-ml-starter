@@ -1,2 +1,12 @@
-# ai-ml-starter
-This is a project for AI/ML Learning
+# Goal
+
+Learn the basics of the AI/ML from small hands-on projects
+
+# System Setup
+
+Darwin Pankajs-MacBook-Pro.local 24.5.0 Darwin Kernel Version 24.5.0: Tue Apr 22 19:53:27 PDT 2025; root:xnu-11417.121.6~2/RELEASE_ARM64_T6041 arm64
+
+
+# environment setup
+
+
