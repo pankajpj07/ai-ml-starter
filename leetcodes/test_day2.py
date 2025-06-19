@@ -3,7 +3,7 @@ Test cases for day2 leetcode
 """
 
 import pytest
-from day2_leetcode import two_sum, is_palindrome, roman_to_int
+from day2_leetcode import two_sum, is_palindrome, roman_to_int, removeElement
 
 
 """
@@ -49,3 +49,14 @@ Testing roman_to_int function
 ])
 def test_roman_to_int(s,expected):
     assert roman_to_int(s) == expected
+
+
+@pytest.mark.parametrize("nums,val,expected",[
+    ([3,2,2,3],3,2),
+    ([0,1,2,2,3,0,4,2],2,5),
+    ([1],1,0),
+    ([],1,0),
+    ([1,2,3,4,5],6,5),
+])
+def test_removeElement(nums,val,expected):
+    assert removeElement(nums,val) == expected

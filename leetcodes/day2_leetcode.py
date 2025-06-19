@@ -61,7 +61,7 @@ def roman_to_int(s:str) -> int:
         prev_value = value
     return total
 
-
+# Remove Duplicates from Sorted Array (Leetcode 26)
 def removeDuplicates(nums: List[int]) -> int:
     """
     Given an integer array nums sorted in non-decreasing order, remove the duplicates in-place such that each unique element appears only once. The relative order of the elements should be kept the same. Then return the number of unique elements in nums.
@@ -71,6 +71,20 @@ def removeDuplicates(nums: List[int]) -> int:
     for i, num in enumerate(nums):
         if not num in nums_map:
             nums_map[num] = i
+            result.append(num)
+    for i, num in enumerate(result):
+        nums[i] = num
+    return len(result)
+
+
+#remove element (Leetcode 27)
+def removeElement(nums: List[int], val: int) -> int:
+    """
+    Given an integer array nums and an integer val, remove all occurrences of val in nums in-place. The relative order of the elements may be changed.
+    """
+    result = []
+    for num in nums:
+        if num != val:
             result.append(num)
     for i, num in enumerate(result):
         nums[i] = num
